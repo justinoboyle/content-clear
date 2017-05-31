@@ -4,11 +4,11 @@ Clear, clean, readable content.
 
 ## Screenshots
 
-![light mode](img/light.png)
+![light mode](https://github.com/justinoboyle/content-clear/blob/master/img/light.png?raw=true)
 
 ## How to use
 
-Simply use [build/style-min.css](build/style-min.css) in your HTML file. content-clear will automatically transform all `<article>`s.
+Simply use [build/style-min.css](https://github.com/justinoboyle/content-clear/blob/master/build/style-min.png?raw=true) in your HTML file. content-clear will automatically transform all `<article>`s.
 
 Example schema:
 
@@ -28,7 +28,7 @@ Example schema:
 
 Output:
 
-![output](img/example.png)
+![output](https://github.com/justinoboyle/content-clear/blob/master/img/example.png?raw=true)
 
 ## API usage
 
