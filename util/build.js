@@ -29,11 +29,11 @@ postcss([autoprefixer, clean()]).process(content).then(function (result) {
         console.warn(warn.toString());
     });
     let map = [];
+    hash = sha256(result.css);
     map.push(package.name + ' version ' + package.version + ' by ' + package.author);
     map.push('build ' + hash);
     map.push(package.license + ' license.');
     result.css = '/*\n' + map.join('\n') + '\n*/\n' + result.css;
-    hash = sha256(result.css);
     console.log('Built CSS. Length: ' + result.css.length);
     console.log('Hash: ' + hash);
     fs.writeFileSync(locationBuildLock, hash, 'utf-8');
