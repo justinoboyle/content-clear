@@ -2,7 +2,7 @@ var path = require('path');
 var fs = require('fs');
 var autoprefixer = require('autoprefixer');
 var clean = require('postcss-clean');
-var postcss      = require('postcss');
+var postcss = require('postcss');
 var sha256 = require('sha256');
 var package = require('../package.json');
 
@@ -19,12 +19,12 @@ var content = fs.readFileSync(location, 'utf-8');
 
 var hash = sha256(content);
 
-if(buildLock == sha256(content)) {
+if (buildLock == sha256(content)) {
     console.log('Already built. Nothing to do.');
     process.exit(0);
 }
 
-postcss([ autoprefixer, clean() ]).process(content).then(function (result) {
+postcss([autoprefixer, clean()]).process(content).then(function (result) {
     result.warnings().forEach(function (warn) {
         console.warn(warn.toString());
     });
