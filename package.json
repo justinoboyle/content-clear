@@ -14,7 +14,11 @@
     "autoprefixer": "^7.1.1",
     "postcss": "^6.0.1",
     "postcss-clean": "^1.0.2",
+    "precommit-hook": "^3.0.0",
     "prefix-css-node": "^0.4.0",
     "sha256": "^0.2.0"
-  }
+  },
+  "pre-commit": [
+    "build"
+  ]
 }
