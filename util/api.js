@@ -7,11 +7,17 @@ module.exports = {
     location: location,
     content: function(then) {
         if(!then)
-            return new Promise(_content);
+            return new Promise(function (resolve, reject){
+                _content(function(err, res) {
+                    if(err)
+                        return reject(err);
+                    return resolve(res);
+                })
+            });
         else _content(then);
     }
 }
 
 function _content(then) {
-    fs.readFile(location, then);
+    fs.readFile(location, 'utf-8', then);
 }
