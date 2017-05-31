@@ -8,7 +8,7 @@ Clear, clean, readable content.
 
 ## How to use
 
-Simply use [build/style-min.css](https://github.com/justinoboyle/content-clear/blob/master/build/style-min.png?raw=true) in your HTML file. content-clear will automatically transform all `<article>`s.
+Simply use [build/style-min.css](https://raw.githubusercontent.com/justinoboyle/content-clear/master/build/style-min.css) in your HTML file. content-clear will automatically transform all `<article>`s.
 
 Example schema:
 
