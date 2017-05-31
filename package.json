@@ -1,0 +1,20 @@
+{
+  "name": "content-clear",
+  "version": "1.0.0",
+  "description": "",
+  "main": "util/api.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "node util/build.js"
+  },
+  "keywords": [],
+  "author": "Justin O'Boyle <justin@justinoboyle.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^7.1.1",
+    "postcss": "^6.0.1",
+    "postcss-clean": "^1.0.2",
+    "prefix-css-node": "^0.4.0",
+    "sha256": "^0.2.0"
+  }
+}
